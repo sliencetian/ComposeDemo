@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.silence.composedemo'
-    compileSdk 32
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.silence.composedemo"
         minSdk 27
-        targetSdk 32
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -36,7 +36,7 @@ android {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion '1.1.1'
+        kotlinCompilerExtensionVersion '1.4.0'
     }
     packagingOptions {
         resources {
@@ -55,4 +55,6 @@ dependencies {
     implementation 'androidx.compose.material3:material3:1.0.0-alpha02'
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
+
+    implementation 'io.coil-kt:coil-compose:2.4.0'
 }
